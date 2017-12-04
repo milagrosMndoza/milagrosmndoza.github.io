@@ -1,0 +1,122 @@
+
+
+/* FOOTER DIV */
+
+	
+#footer{
+	background-color: rgba(139, 2, 112, 0.6);
+}
+
+  
+/* SOCIAL ICONS */
+.icon-btn {
+  text-align: center;
+  font-size: 30px;
+  letter-spacing: 30px;
+  text-indent: 30px; }
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 30px; }
+
+  .thumbnail img {
+    height: 130px;
+    width: 240px; } }
+@media (max-width: 450px) {
+  .text {
+    font-size: 25px; }
+
+  // .img-round {
+  //   height: 150px;
+  //   width: 150px;
+  //   margin: auto; }
+
+  .skillbar-title {
+    width: 60px;
+    font-weight: normal;
+    font-size: 8px; }
+
+  .soc-media-ul a {
+    font-size: 1.5rem; }
+
+  .sec-services {
+    font-size: 1.5rem; }
+
+  .sec-services {
+    font-size: 0.7em; } }
+@media screen and (max-width: 600px) {
+  .soc-media-ul a {
+		font-size: 2rem; } }
+		
+		@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+		
+		$timing        : 265ms;
+		$iconColor     : #ff00ea;
+		$accent        : #874b88;
+		$grape         : #7b00e0;
+		$orchid        : #9464a5;
+		
+		@mixin transformScale($size: 1) {
+				transform: scale($size);
+				-ms-transform: scale($size);
+				-webkit-transform: scale($size);
+		}
+		
+			
+		.social-container {
+				margin: 0;
+				text-align: center;
+		}
+		
+		.social-icons {
+				padding: 0;
+				list-style: none;
+				margin: 1em;
+			
+				li {
+						display: inline-block;
+						margin: 0.15em;
+						position: relative;
+						font-size: 1.2em;
+		
+				}
+		
+				i {
+						color: #fff;
+						position: absolute;
+						top: 21px;
+						left: 21px;
+						transition: all $timing ease-out;
+				}
+		
+				a {
+						display: inline-block;
+					
+						&:before {
+								@include transformScale();
+								content: " ";
+								width: 60px;
+								height: 60px;
+								border-radius: 100%;
+								display: block;
+								background: linear-gradient(45deg, $iconColor, $accent);
+								transition: all $timing ease-out;
+						}
+						
+						&:hover:before {
+								transform: scale(0);
+								transition: all $timing ease-in;
+						}
+						
+						&:hover i {
+								@include transformScale(2.2);
+								color: $iconColor;
+								background: -webkit-linear-gradient(45deg, $iconColor, $accent);
+								-webkit-background-clip: text;
+								-webkit-text-fill-color: transparent;
+								transition: all $timing ease-in;
+						}
+				}
+			
+	
+		}	

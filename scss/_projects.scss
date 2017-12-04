@@ -1,0 +1,82 @@
+/* PORTFOLIO DIV */
+#portfolio {
+  background-image: url('../img/fondoPorta.jpg'); 
+  background-attachment: fixed;
+  text-shadow: 0 0 3px rgb(161, 19, 119), 0 0 5px rgb(192, 18, 85);
+  .title-section{
+    color: #fff;
+    } 
+  .parallax{
+      background: #fff fixed;
+      background-size: cover;
+   }
+   .row-centered {
+    text-align:center;
+}
+.col-centered {
+    display:inline-block;
+    float:none;
+    /* reset the text-align */
+    text-align:left;
+    /* inline-block space fix */
+    margin-right:-4px;
+}
+.thumbnail img{
+  height:240px;
+}
+.shadow{
+  box-shadow: 7px 7px 7px #666;
+  position : relative;
+  transition : all 0.2s;
+  top : 0;
+  p{
+    text-align:center;
+  }
+  h3:hover {
+    color: #939393;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+  }
+  p:hover {
+    color: #939393;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+  }
+}
+
+a {
+  color: #55606A;
+}
+
+ 
+.cust-caption{
+  display:none;
+  position: absolute;
+  background-color: rgba(30,30,30,0.8);
+  padding : 10px;
+  color:#ddd;
+  margin:5px;
+  bottom:0;
+  left:0;
+  right:0;
+  height : 60%;
+  margin:5px;
+  overflow-y : auto;
+  a{
+    color:white;
+    text-shadow:1px 1px 2px black;
+  }
+}
+.stm-font{
+  text-align:center;
+}
+.up-hover:hover {
+  top :-5px;
+  box-shadow: 15px 15px 15px #777;
+}
+
+}
+
+

@@ -1,0 +1,217 @@
+
+/*LOGO*/
+#logo{
+    margin-top: -25px;
+
+}
+/* NAVBAR */
+
+#efectNav{
+    a {
+        font-size: 15px;
+        font-weight: bold;
+        color: #fff;
+        text-shadow: 0 0 3px gray;  
+        font-family: 'Lato';
+        -webkit-transition: all .1s ease-in-out;
+        -moz-transition: all .1s ease-in-out;
+        transition: all .1s ease-in-out;
+
+    }
+ 
+    .navbar{
+        background: rgba(139, 2, 112, 0.631);
+       height: 70px;
+    }
+    .container{
+        margin-top: 10px;
+        width: 100%;
+    }
+    a:hover {
+        font-size: 17px;
+        height: 50px;
+        background-color: rgba(146, 58, 124, 0.562);
+      }
+    
+    // .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    //     background-color: rgba(165, 9, 126, 0.562);
+    //     -webkit-transition: all .1s ease-in-out;
+    //     -moz-transition: all .1s ease-in-out;
+    //     transition: all .1s ease-in-out;
+         
+    // }
+ 
+    .navbar-default ul.navbar-nav li.active {
+      
+        background-color: rgba(146, 58, 124, 0.562);
+    }
+    .navbar-default .navbar-nav>.active>a{
+    background: rgba(146, 58, 124, 0.562)!important; 
+    }
+
+    .navbar-default {
+        border-color: transparent;
+       
+        
+    }
+    .navbar-default .navbar-toggle:hover {
+        background-color: rgba(255,255,255,.15);
+    }
+    .navbar-default .navbar-toggle {
+        border-color: rgba(255,255,255,.15);
+    }
+
+	.navbar-toggle{
+		width: 42px;
+		height: 38px;
+		float: right;
+		margin-top: 10px;
+	  }
+	  
+	  .navbar-toggle * {
+		  -ms-transition: all 0.5s ease;
+		-webkit-transition: all 0.5s ease;
+		  -moz-transition: all 0.5s ease;
+		  -o-transition: all 0.5s ease;
+		  transition: all 0.5s ease;
+	  }
+	  
+	  .navbar-toggle span {
+		  width: 20px;
+		  height: 2px;
+		  margin-bottom: 3px;
+		  background-color: rgb(255, 253, 255);
+		  display: block;
+	  }
+	  
+	  /* Codepen styling, not required for use */
+	  .navbar-toggle span.bar1 {
+		  -ms-transform: rotate(45deg);
+		  -webkit-transform: rotate(45deg);
+		-moz-transform: rotate(45deg);
+		-o-transform: rotate(45deg);
+		transform: rotate(45deg);
+		  -ms-transform-origin: 1px 3px;
+		  -webkit-transform-origin: 1px 3px;
+		-moz-transform-origin: 1px 3px;
+		-o-transform-origin: 1px 3px;
+		  transform-origin: 1px 3px;
+		  width: 24px;
+	  } 
+	  .navbar-toggle span.bar2 {
+		-ms-transform: rotate(-360deg) scale(0);
+		-webkit-transform: rotate(-360deg) scale(0);
+		-moz-transform: rotate(-360deg) scale(0);
+		-o-transform: rotate(-360deg) scale(0);
+		transform: rotate(-360deg) scale(0);
+	  }
+	  .navbar-toggle span.bar3 {
+		-ms-transform: rotate(360deg) scale(0);
+		-webkit-transform: rotate(360deg) scale(0);
+		-moz-transform: rotate(360deg) scale(0);
+		-o-transform: rotate(360deg) scale(0);
+		transform: rotate(360deg) scale(0);
+	  } 
+	  .navbar-toggle span.bar4 {
+		  -ms-transform: rotate(-45deg);
+		  -webkit-transform: rotate(-45deg);
+		  transform: rotate(-45deg);
+		  -ms-transform-origin: 2px 0px;
+		  -webkit-transform-origin: 2px 0px;
+		  transform-origin: 2px 0px;
+		  width: 24px;
+	  }
+	  .navbar-toggle.collapsed span.bar1,
+	  .navbar-toggle.collapsed span.bar2,
+	  .navbar-toggle.collapsed span.bar3,
+	  .navbar-toggle.collapsed span.bar4 {
+		  -ms-transform: none;
+		  -webkit-transform: none;
+		  transform: none;
+		  width: 20px;
+	  }
+
+
+}
+
+@media (max-width: 768px) {
+    #navbar{
+        background: rgba(139, 2, 114, 0.493) !important;
+       }
+       .navbar-brand{
+        #logo {
+              margin-top: -25px!important;
+          } 
+     } 
+    
+   } 
+
+@media (max-width: 850px) {
+    #navbar a{
+        font-size: 12px;
+          
+    }
+    #navbar a:hover {
+        font-size: 14px;
+    }
+   .navbar-brand{
+      #logo {
+            height: 80px;
+            width: 80% ;
+        } 
+   } 
+
+}
+// @media (max-width: 991px){
+//     #navbar a{
+//         font-size: 13px;
+//     }
+//     #nabvar a:hover {
+//         font-size: 15px;
+//     }
+// }
+
+
+
+    // .navbar-brand {
+    //     padding: 0 !important;
+    //          #logo {
+    //             height: 80px !important;
+    //             width: 80% !important;
+    //             margin-top: -5px!important;
+    //         }
+           
+    // }
+            
+
+
+
+// @media (max-width: 768px){
+//     .navbar-brand {
+//         padding: 0 !important;
+//         picture{
+//             #logo {
+//                 height: 80px !important;
+//                 width: 90% !important;
+//                 margin-top: -5px!important;
+//             }
+//         }
+    
+//     }
+// }
+
+// @media (min-width: 768px){
+// .navbar-nav {
+//     margin: 1.1em;
+// }
+// .navbar-header span{
+//     width: 40px !important;
+//     height: 10px !important;
+//     border-radius: 2px !important;
+    
+// }
+
+// }
+
+
+

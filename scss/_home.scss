@@ -1,0 +1,180 @@
+
+
+// .loading {
+// 	position: fixed;
+// 	top: 0;
+// 	left: 0;
+// 	width: 100%;
+// 	height: 100%;
+// 	background: #000;
+// 	z-index: 9999;
+// }
+/*SECTION NAME*/
+#name{
+	svg {
+		display: block;
+		font: 7.5em 'Montserrat';
+		width: 600px;
+		height: 130px;
+		// right: 500px;
+		margin-top: 200px;
+	}
+	
+	.text-copy {
+		fill: none;
+		stroke: rgb(248, 239, 239);
+		stroke-dasharray: 6% 29%;
+		stroke-width: 5px;
+		stroke-dashoffset: 0%;
+		animation: stroke-offset 5.5s infinite linear;
+	}
+	
+	.text-copy:nth-child(1){
+		stroke: rgb(248, 243, 243);
+		animation-delay: -1;
+	}
+	
+	.text-copy:nth-child(2){
+		stroke: rgb(253, 252, 252);
+		animation-delay: -2s;
+	}
+	
+	.text-copy:nth-child(3){
+		stroke: rgb(248, 247, 247);
+		animation-delay: -3s;
+	}
+	
+	.text-copy:nth-child(4){
+		stroke: rgb(248, 248, 248);
+		animation-delay: -4s;
+	}
+	
+	.text-copy:nth-child(5){
+		stroke: rgb(255, 251, 253);
+		animation-delay: -5s;
+	}
+	
+	@keyframes stroke-offset{
+		100% {stroke-dashoffset: -35%;}
+	}
+}
+
+/* SECTION 1 WRAPPER */
+#welcome {
+	padding-top: 70px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+/*Portada*/
+.container-portada{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background: url(../img/Portada.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	animation: movimiento 10s infinite linear alternate;  
+	
+	.sub{
+	    font-family: "Montserrat";
+		color: #fff;
+		font-size: 25px;
+		font-weight: bold;
+		text-align: center;
+		margin-top: -30px;
+		margin-right: 550px;
+		position: relative;
+	}
+}
+
+@keyframes movimiento{
+    from{
+        background-position: bottom left;
+    }to{
+        background-position: top right;
+    }
+}
+
+
+.btn {
+	font-weight: 700;
+}
+
+
+/* SCROLL DOWN ARROW */
+
+.fa-angle-double-down {
+	vertical-align: 8%;
+}
+/* SCROLL DOWN BUTTON */
+.btn-circle {
+	width: 70px;
+	height: 70px;
+	border: 2px solid #fff;
+	border-radius: 100%; }
+  
+  .btn-circle:hover {
+	background: rgba(255, 255, 255, 0.1); }
+
+/* HEADER DIV */
+
+#header {
+	text-align: center;
+	a {
+		font-size: 45px;
+		color: #fff;
+		-webkit-transition: all .2s ease-in-out;
+		-moz-transition: all .2s ease-in-out;
+		transition: all .2s ease-in-out;
+	}
+	a:hover {
+		font-size: 50px;
+	}
+}	
+@media (max-width: 767px){
+	#name{
+		svg {
+			font: 4.5em !important;
+			width: 320px;
+			height: 100px;
+		margin-top: 50px!important;
+		
+		}
+	// margin-top: 200px;
+	}
+	.container-portada{
+		
+			.sub{
+				font-size: 15px!important;
+				text-align: center !important;
+			}
+	}
+}
+
+@media (max-width: 991px){
+
+	.container-portada{	
+		.sub{
+			margin-right: 150px!important;
+		}
+				
+	}
+}
+@media (max-width: 1199px){
+	#name{
+		svg {
+		margin-top: 100px;
+		}
+	}
+	.container-portada{
+		
+			.sub{
+				font-size: 25px;
+				text-align: center;
+				margin-right: 350px;
+			}
+	}
+}
