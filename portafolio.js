@@ -11,11 +11,15 @@ $(document).ready(function(){
 	        window.location.hash = target;
 	    });
 	});
-  	// Mostramos y ocultamos submenus
-		$('.nav a').on('click', function(){
-			$('.navbar-toggle').click(); 
-	});
-  //Project hover animation 
+// Mostramos y ocultamos toggle
+	$(function() {
+    $('.nav a').on('click', function(){ 
+        if($('.navbar-toggle').css('display') !='none'){
+            $(".navbar-toggle").trigger( "click" );
+        }
+    });
+});
+  // //Project hover animation 
   $('#portfolio .thumbnail').hover(function(){
     $(this).children(".cust-caption").slideDown();
   },

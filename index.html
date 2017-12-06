@@ -328,14 +328,14 @@
 		<br>
 		<div class="text-center title-section">Contáctame</div>
 		<div class="sec-contac text-center">
-			<form class="cf">
+			<form  id="contactForm" class="cf">
 				<div class="half left cf">
-				  <input required type="text" id="input-name" placeholder="Nombres">
-				  <input required type="email" id="input-email" placeholder="Email">
-				  <input type="tel" id="input-subject" placeholder="Celular">
+				  <input required type="text" id="name" placeholder="Nombres">
+				  <input required type="email" id="email" placeholder="Email">
+				  <input type="tel" id="input-cel" placeholder="Celular">
 				</div>
 				<div class="half right cf">
-				  <textarea name="message" type="text" id="input-message" placeholder="Mensaje"></textarea>
+				  <textarea name="message" type="text" id="message" placeholder="Mensaje"></textarea>
 				</div>  
 				<input type="submit" value="Enviar" id="input-submit">
 			<br><br><br>
@@ -359,25 +359,12 @@
 	 <!-- END FOOTER -->
 	<!--firebase-->
 	<script src="https://www.gstatic.com/firebasejs/4.7.0/firebase.js"></script>
-	<script>
-	  // Initialize Firebase
-	  var config = {
-		apiKey: "AIzaSyApDvbBTiKOrqrB4BqMsMpwL8C_ooawXOE",
-		authDomain: "bd-portafolio.firebaseapp.com",
-		databaseURL: "https://bd-portafolio.firebaseio.com",
-		projectId: "bd-portafolio",
-		storageBucket: "bd-portafolio.appspot.com",
-		messagingSenderId: "783955591124"
-	  };
-	  firebase.initializeApp(config);
-	</script>
+
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<!-- Latest compiled and minified JavaScript -->
 	<script type='text/javascript' src="portafolio.js"></script>
 	<script type='text/javascript' src="formulario.js"></script>
-	<script type='text/javascript' src="about.js"></script>
-	<script type='text/javascript' src="home.js"></script>
 </body>
 
 </html>
