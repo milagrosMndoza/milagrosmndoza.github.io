@@ -25,19 +25,19 @@ function submitForm(e){
   var phone =getInputVal('cel');
   var message = getInputVal('message');
 
-  // Save message
-  saveMessage(name, email, cel, message);
+  // // Save message
+  // saveMessage(name, email, cel, message);
 
-  // Show alert
-  document.querySelector('.alert').style.display = 'block';
+  // // Show alert
+  // document.querySelector('.alert').style.display = 'block';
 
-  // Hide alert after 3 seconds
-  setTimeout(function(){
-    document.querySelector('.alert').style.display = 'none';
-  },3000);
+  // // Hide alert after 3 seconds
+  // setTimeout(function(){
+  //   document.querySelector('.alert').style.display = 'none';
+  // },3000);
 
-  // Clear form
-  document.getElementById('contactForm').reset();
+  // // Clear form
+  // document.getElementById('contactForm').reset();
 }
 // Function to get get form values
 function getInputVal(id){
@@ -50,4 +50,24 @@ function saveMessage(name, email, cel, message){
   newMessageRef.set({
    name, email, cel, message
   });
+}
+
+
+//firebase profesor
+ function saveDate (name,email, cel, message) {
+  const date = []
+ const newContact = {
+    name: name,
+    email: email,
+    cel: cel,
+    message: message
+ };
+
+ const res = await  firebase.database().ref('formulario/').push (newContact);
+ newContact.id = res.key;
+
+ const newcontact= date.concat(newContact);
+store.setState({
+  date: newcontact
+})
 }
