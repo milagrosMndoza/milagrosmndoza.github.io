@@ -1,10 +1,45 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+
+$timing        : 265ms;
+$iconColor     : #ff00ea;
+$accent        : #874b88;
+$grape         : #7b00e0;
+$orchid        : #9464a5;
 
 
 /* FOOTER DIV */
 
+/*button download cv*/
+@mixin btn-animation() {
+  transform: translateX(-100%);
+}
+
+.btn-animated {
+  position: relative;
+  overflow: hidden;
+	padding: 0;
+	left:-1.5%;
+  background: linear-gradient(45deg, $iconColor, $accent);
+  .btn-revealer, .btn-cover {
+     width: 100%; height: 100%;  padding: 10px;
+     transition: all 0.3s ease-in-out;
+     display: inline-block;
+  }
+  
+  &:hover {
+    .btn-cover, .btn-revealer {
+      @include btn-animation();
+    }
+  } 
+}
 	
 #footer{
 	background-color: rgba(139, 2, 112, 0.6);
+	.footer-below {
+		padding: 25px 0;
+		color: purple;
+		text-align: center;
+	}
 }
 
   
@@ -26,10 +61,6 @@
   .text {
     font-size: 25px; }
 
-  // .img-round {
-  //   height: 150px;
-  //   width: 150px;
-  //   margin: auto; }
 
   .skillbar-title {
     width: 60px;
@@ -48,14 +79,7 @@
   .soc-media-ul a {
 		font-size: 2rem; } }
 		
-		@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
-		
-		$timing        : 265ms;
-		$iconColor     : #ff00ea;
-		$accent        : #874b88;
-		$grape         : #7b00e0;
-		$orchid        : #9464a5;
-		
+	
 		@mixin transformScale($size: 1) {
 				transform: scale($size);
 				-ms-transform: scale($size);
